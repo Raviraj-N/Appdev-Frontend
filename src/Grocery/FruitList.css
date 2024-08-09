@@ -1,0 +1,62 @@
+/* FruitList.css */
+
+.fruit-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .page-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card img {
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  .product-card h2 {
+    font-size: 1.5em;
+    margin: 15px 0;
+  }
+  
+  .product-card p {
+    color: #555;
+    font-size: 1em;
+    margin-bottom: 15px;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-card .buy-now {
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product-card .buy-now:hover {
+    background-color: #218838;
+  }
+  

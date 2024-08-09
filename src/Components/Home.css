@@ -1,0 +1,217 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background: #04c22a;
+  color: white;
+  padding: 20px 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0; /* Added padding */
+  position: relative; /* Ensure relative positioning for absolute positioning of the dropdown */
+}
+
+.branding h1, .branding h3 {
+  margin: 0;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Added gap to space out the nav items */
+  margin-left: auto; /* Aligns the nav to the right */
+}
+
+.nav li {
+  cursor: pointer;
+  position: relative;
+}
+
+.profile:hover .dropdown {
+  display: block; /* Change display to block */
+}
+.Grocery:hover .dropdown {
+  display: block; /* Change display to block */
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%; /* Position below the topbar */
+  left: -160%;
+  background-color: white;
+  color: black;
+  min-width: 150px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  z-index: 1;
+}
+
+.dropdown li {
+  padding: 10px;
+  text-align: left;
+}
+
+.dropdown li a {
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown li i {
+  margin-right: 10px;
+}
+
+.dropdown li:hover {
+  background-color: #ddd;
+}
+
+.main-background {
+  background: url('../Images/home2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.supporting {
+  background: rgba(255, 255, 255, 0.8); /* Transparent background */
+  padding: 50px 0;
+  text-align: center;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.col {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 5px;
+  width: calc(33.333% - 40px); /* 33.333% width with margin considered */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.col img {
+  width: 100%; /* Updated to fit the full width of the card */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px;
+}
+
+.btn-default, .col button {
+  display: inline-block;
+  margin-top: 10px;
+  color: #ff6347;
+  background: none;
+  text-decoration: none;
+  border: 1px solid #ff6347;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer {
+  background: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.favorite-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: rgb(223, 213, 213); /* Initial color */
+  cursor: pointer;
+}
+
+.product-list .col {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.product-list h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.product-list p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.product-list button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+.product-list button:hover {
+  background-color: #218838;
+}
+
+
+
+.favorite-icon.favorited {
+  color: rgb(239, 10, 10); /* Change color when favorited */
+}
+
+
+.dropdown, .sub-dropdown {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  background: white;
+  border: 1px solid #ddd;
+  display: none;
+}
+
+.nav > li {
+  position: relative;
+}
+
+.nav li:hover .dropdown, .nav li:hover .sub-dropdown {
+  display: block;
+}
+
+.sub-dropdown {
+  top: 0;
+  left: 100%;
+}
+
+
